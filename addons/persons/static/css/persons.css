@@ -1,0 +1,14 @@
+.person-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+.person-card h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+.person-card small {
+  color: #888;
+}
