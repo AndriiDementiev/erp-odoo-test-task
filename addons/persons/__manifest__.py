@@ -14,7 +14,12 @@
         "views/website_templates.xml",
         "views/person_form_template.xml"
     ],
-    "assets": {},
+    "assets": {
+        "web.assets_frontend": [
+                "persons/static/css/persons.css",
+                "persons/static/js/persons.js",
+            ],
+    },
     "application": False,
     "installable": True,
 }
