@@ -9,17 +9,12 @@
     "license": "LGPL-3",
     "depends": ["base", "website"],
     "data": [
-        "security/security.xml",
         "security/ir.model.access.csv",
         "views/person_views.xml",
         "views/website_templates.xml",
+        "views/person_form_template.xml"
     ],
-    "assets": {
-        "web.assets_frontend": [
-            "persons/static/css/persons.css",
-            "persons/static/js/persons.js",
-        ],
-    },
+    "assets": {},
     "application": False,
     "installable": True,
 }
