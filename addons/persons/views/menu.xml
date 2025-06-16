@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <menuitem id="menu_persons_root" name="Persons" sequence="10"/>
+
+  <menuitem id="menu_persons_submenu"
+            name="All Persons"
+            parent="menu_persons_root"
+            action="action_persons_list"
+            sequence="10"/>
+</odoo>
