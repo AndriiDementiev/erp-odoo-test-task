@@ -1,0 +1,27 @@
+<odoo>
+  <template id="persons_website_template" name="Persons Website List">
+    <t t-call="website.layout">
+      <div class="container mt-5">
+        <h2>Latest Persons</h2>
+        <t t-if="request.params.get('success')">
+          <div class="alert alert-success">Person successfully added!</div>
+        </t>
+        <div class="row">
+          <t t-foreach="persons" t-as="person">
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title"><t t-esc="person.full_name"/></h5>
+                  <p class="card-text">Age: <t t-esc="person.age or '-'"/></p>
+                  <p class="card-text">Sex: <t t-esc="person.sex or '-'"/></p>
+                  <p class="card-text">Company: <t t-esc="person.company_id.name or '-'"/></p>
+                </div>
+              </div>
+            </div>
+          </t>
+        </div>
+        <a href="/persons/new" class="btn btn-primary mt-3">Add Person</a>
+      </div>
+    </t>
+  </template>
+</odoo>
